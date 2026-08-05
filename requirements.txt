@@ -1,0 +1,5 @@
+python-dotenv>=1.2.2
+python-telegram-bot==21.9
+requests>=2.34.2
+telegram>=0.0.1
+yt-dlp>=2026.7.4
