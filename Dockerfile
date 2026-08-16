@@ -17,4 +17,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY bot.py run.py .env ./
 
-CMD ["python", "run.py"]
+CMD ["python", "bot.py"]
