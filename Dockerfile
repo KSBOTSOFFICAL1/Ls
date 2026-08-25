@@ -28,8 +28,8 @@ COPY requirements.txt .
 RUN python -m pip install --no-cache-dir --upgrade pip \
     && python -m pip install --no-cache-dir -r requirements.txt
 
-COPY bot.py run.py .env.example ./
+COPY bot.py bot.py .env
 
 # The Python bot starts the Local Bot API first and then points python-telegram-bot
 # at the local /bot and /file/bot endpoints. There is intentionally no cloud fallback.
-CMD ["python", "run.py"]
+CMD ["python", "bot.py"]
